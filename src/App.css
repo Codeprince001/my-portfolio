@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #EF9C01
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    opacity: 0.35;
+    filter: drop-shadow(0 0 10px rgba(239, 156, 1, 0.7));
+  }
+
+  50% {
+    opacity: 0.6;
+    filter: drop-shadow(0 0 25px rgba(239, 156, 1, 1));
+  }
+}
+
+.animate-pulseGlow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
