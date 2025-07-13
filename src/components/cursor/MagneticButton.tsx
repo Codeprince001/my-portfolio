@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 
 interface MagneticButtonProps {
   children: React.ReactNode;
@@ -13,8 +13,6 @@ const MagneticButton: React.FC<MagneticButtonProps> = ({ children }) => {
   const springX = useSpring(mouseX, { stiffness: 300, damping: 20 });
   const springY = useSpring(mouseY, { stiffness: 300, damping: 20 });
 
-  const [isHovering, setIsHovering] = useState(false);
-
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!ref.current) return;
     const rect = ref.current.getBoundingClientRect();
@@ -23,13 +21,11 @@ const MagneticButton: React.FC<MagneticButtonProps> = ({ children }) => {
 
     mouseX.set(offsetX);
     mouseY.set(offsetY);
-    setIsHovering(true);
   };
 
   const handleMouseLeave = () => {
     mouseX.set(0);
     mouseY.set(0);
-    setIsHovering(false);
   };
 
   return (
