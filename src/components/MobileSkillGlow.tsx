@@ -1,3 +1,4 @@
+// File: components/MobileSkillGlow.tsx
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { skills } from '../constants/skills';
@@ -8,33 +9,46 @@ const MobileSkillGlow: React.FC = () => {
   useEffect(() => {
     let current = 0;
 
-    const loopGlow = async () => {
+    const animateGlow = async () => {
       while (true) {
         // Reset all
         await Promise.all(
-          controlsArray.map((ctrl, i) =>
+          controlsArray.map((ctrl) =>
             ctrl.start({
               filter: 'brightness(1)',
-              boxShadow: '0 0 0px rgba(0,0,0,0)',
+              boxShadow: '0 0 0 rgba(0,0,0,0)',
               transition: { duration: 0.2 },
             })
           )
         );
 
-        // Glow current
+        // Glow current item
         await controlsArray[current].start({
           filter: 'brightness(1.4)',
           boxShadow: '0 0 10px rgba(239,156,1,0.8)',
           transition: { duration: 0.4 },
         });
 
+        // Pause while glowing
+        await new Promise((res) => setTimeout(res, 400));
+
+        // Reset current
+        await controlsArray[current].start({
+          filter: 'brightness(1)',
+          boxShadow: '0 0 0 rgba(0,0,0,0)',
+          transition: { duration: 0.3 },
+        });
+
+        // Wait briefly before moving to next
+        await new Promise((res) => setTimeout(res, 100));
+
+        // Move to next index
         current = (current + 1) % skills.length;
-        await new Promise((res) => setTimeout(res, 300)); // pause between glows
       }
     };
 
-    loopGlow();
-  }, [controlsArray]);
+    animateGlow();
+  }, []);
 
   return (
     <div className="grid grid-cols-3 gap-4 sm:hidden justify-items-center">
