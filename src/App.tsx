@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div>
-      {/* <CustomCursor/> */}
+      <CustomCursor/>
      <Header/>
      <Hero/>
      {/* <Divider/> */}
