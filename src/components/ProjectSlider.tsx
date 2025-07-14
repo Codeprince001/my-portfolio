@@ -13,6 +13,9 @@ const ProjectSlider: React.FC = () => {
       "(max-width: 640px)": {
         slides: { perView: 1.2, spacing: 10 },
       },
+      "(max-width: 760px)": {
+        slides: { perView: 2, spacing: 10 },
+      }
     },
     slides: {
       perView: 4.2,
