@@ -29,12 +29,12 @@ const Projects: React.FC = () => {
     <div className="bg-[#0A0A23] text-white min-h-screen py-10 px-4 sm:px-8">
       <button
         onClick={() => navigate('/')}
-        className="mb-6 inline-block rounded border border-yellow-400 px-4 py-2 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900 transition"
+        className="mb-6 inline-block rounded border border-brand px-4 py-2 text-brand hover:bg-brand hover:text-gray-900 transition"
       >
         ← Back
       </button>
 
-      <h2 className="text-center text-3xl font-bold text-yellow-400 mb-8">My Projects</h2>
+      <h2 className="text-center text-3xl font-bold text-brand mb-8">My Projects</h2>
 
       {/* Tabs */}
       <ul className="flex justify-center border-b border-gray-700 mb-8">
@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
             onClick={() => setActiveTab('web')}
             className={`py-2 px-6 font-semibold border-b-4 transition ${
               activeTab === 'web'
-                ? 'border-yellow-400 text-yellow-400'
+                ? 'border-brand text-brand'
                 : 'border-transparent text-gray-400 hover:text-yellow-300 hover:border-yellow-300'
             }`}
           >
@@ -55,7 +55,7 @@ const Projects: React.FC = () => {
             onClick={() => setActiveTab('mobile')}
             className={`py-2 px-6 font-semibold border-b-4 transition ${
               activeTab === 'mobile'
-                ? 'border-yellow-400 text-yellow-400'
+                ? 'border-brand text-brand'
                 : 'border-transparent text-gray-400 hover:text-yellow-300 hover:border-yellow-300'
             }`}
           >
@@ -80,7 +80,7 @@ const Projects: React.FC = () => {
               onClick={() => handlePageChange(i + 1, activeTab)}
               className={`px-4 py-2 rounded-md font-medium transition ${
                 (activeTab === 'web' ? webPage : mobilePage) === i + 1
-                  ? 'bg-yellow-400 text-gray-900'
+                  ? 'bg-brand text-gray-900'
                   : 'bg-gray-800 text-gray-400 hover:bg-yellow-300 hover:text-gray-900'
               }`}
               aria-current={(activeTab === 'web' ? webPage : mobilePage) === i + 1 ? 'page' : undefined}
