@@ -10,18 +10,18 @@ const ProjectSlider: React.FC = () => {
     loop: false,
     mode: "snap",
     breakpoints: {
-      "(max-width: 640px)": {
-        slides: { perView: 1.2, spacing: 10 },
-      },
-      "(max-width: 760px)": {
-        slides: { perView: 2, spacing: 10 },
-      }
+    "(max-width: 639px)": {
+      slides: { perView: 1.2, spacing: 10 }, // Mobile
     },
-    slides: {
-      perView: 4.2,
-      spacing: 20,
+    "(min-width: 640px) and (max-width: 1023px)": {
+      slides: { perView: 2.2, spacing: 15 }, // Tablet
     },
-  });
+    "(min-width: 1024px)": {
+      slides: { perView: 3.5, spacing: 20 }, // Desktop
+    },
+  },
+  slides: { perView: 1.2, spacing: 10 }, // Default (e.g., very small devices)
+});
 
   return (
     <div className=" bg-[#0A0A23]">
