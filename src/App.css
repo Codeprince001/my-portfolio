@@ -1,7 +1,10 @@
 @import "tailwindcss";
+@import 'keen-slider/keen-slider.min.css';
+
 
 @theme {
-  --color-brand: #EF9C01
+  --color-brand: #EF9C01;
+  --color-secondary: #141432
 }
 
 @keyframes pulseGlow {

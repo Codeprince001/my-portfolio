@@ -1,9 +1,8 @@
 import './App.css'
 import About from './components/About';
-import CustomCursor from './components/cursor/Cursor';
-// import Divider from './components/Divider';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import ProjectSlider from './components/ProjectSlider';
 import Services from './components/Services';
 import Skills from './components/Skills';
 // import About from './components/About';
@@ -17,13 +16,13 @@ function App() {
 
   return (
     <div>
-      <CustomCursor/>
      <Header/>
      <Hero/>
      {/* <Divider/> */}
      <About/>
      <Services/>
      <Skills/>
+     <ProjectSlider/>
     </div>
   )
 }
