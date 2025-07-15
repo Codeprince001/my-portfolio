@@ -10,6 +10,7 @@ import Skills from './components/Skills';
 import ProjectSlider from './components/ProjectSlider';
 import Projects from './pages/Project'; // 📄 your full projects page
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const Home = () => (
   <>
@@ -20,6 +21,7 @@ const Home = () => (
     <Skills />
     <ProjectSlider />
     <Contact/>
+    <Footer/>
   </>
 );
 
