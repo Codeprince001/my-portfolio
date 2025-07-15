@@ -9,6 +9,7 @@ import Services from './components/Services';
 import Skills from './components/Skills';
 import ProjectSlider from './components/ProjectSlider';
 import Projects from './pages/Project'; // 📄 your full projects page
+import Contact from './components/Contact';
 
 const Home = () => (
   <>
@@ -18,6 +19,7 @@ const Home = () => (
     <Services />
     <Skills />
     <ProjectSlider />
+    <Contact/>
   </>
 );
 

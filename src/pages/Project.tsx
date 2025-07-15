@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
   return (
     <div className="bg-[#0A0A23] text-white min-h-screen py-10 px-4 sm:px-8">
       <button
-        onClick={() => navigate('/')}
+        onClick={() => navigate('')}
         className="mb-6 inline-block rounded border border-brand px-4 py-2 text-brand hover:bg-brand hover:text-gray-900 transition"
       >
         ← Back

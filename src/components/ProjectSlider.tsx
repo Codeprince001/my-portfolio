@@ -24,7 +24,7 @@ const ProjectSlider: React.FC = () => {
 });
 
   return (
-    <div className=" bg-[#0A0A23]">
+    <div id='projects' className=" bg-[#0A0A23]">
       <h2 className="text-2xl md:text-3xl font-bold text-brand mb-4 text-center pb-8">Projects</h2>
 
       <div ref={sliderRef} className="keen-slider">
