@@ -1,6 +1,7 @@
 // components/Footer.tsx
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaArrowUp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin,  FaArrowUp} from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -29,7 +30,7 @@ const Footer: React.FC = () => {
       {/* Social Icons */}
       <div className="flex justify-center space-x-6 mt-4">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/Codeprince001"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#EF9C01] transition"
@@ -37,7 +38,7 @@ const Footer: React.FC = () => {
           <FaGithub size={24} />
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/wisdom-urangyork-bb4818269/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#EF9C01] transition"
@@ -45,12 +46,12 @@ const Footer: React.FC = () => {
           <FaLinkedin size={24} />
         </a>
         <a
-          href="https://twitter.com/yourusername"
+          href="https://twitter.com/Kingswisdom001"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#EF9C01] transition"
         >
-          <FaTwitter size={24} />
+          <FaXTwitter size={24} />
         </a>
       </div>
 

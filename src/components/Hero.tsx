@@ -6,7 +6,6 @@ import HeroIllustration from "../assets/hero-illustration.png";
 import LinkedinIcon from "../assets/linkedin.svg";
 import XIcon from "../assets/x.svg";
 import GithubIcon from "../assets/github.svg";
-import EmailIcon from "../assets/email.svg";
 import GridBackground from "../components/GridBackground"
 
 const Hero: React.FC = () => {
@@ -52,22 +51,19 @@ const Hero: React.FC = () => {
             </a>
 
             <div className="flex items-center gap-4">
-              <a href="#" target="_blank" rel="noreferrer"
+              <a href="https://www.linkedin.com/in/wisdom-urangyork-bb4818269/" target="_blank" rel="noreferrer"
                 className="p-1 bg-white/10 rounded-full hover:bg-brand transition duration-300">
                 <img src={LinkedinIcon} alt="LinkedIn" className="w-10 h-10" />
               </a>
-              <a href="#" target="_blank" rel="noreferrer"
-                className="p-1 bg-white/10 rounded-full hover:bg-brand transition duration-300">
-                <img src={XIcon} alt="X" className="w-10 h-10 rounded-full" />
-              </a>
-              <a href="#" target="_blank" rel="noreferrer"
+              <a href="https://github.com/Codeprince001" target="_blank" rel="noreferrer"
                 className="p-1 bg-white/10 rounded-full hover:bg-brand transition duration-300">
                 <img src={GithubIcon} alt="GitHub" className="w-10 h-10" />
               </a>
-              <a href="#" target="_blank" rel="noreferrer"
+              <a href="https://twitter.com/Kingswisdom001" target="_blank" rel="noreferrer"
                 className="p-1 bg-white/10 rounded-full hover:bg-brand transition duration-300">
-                <img src={EmailIcon} alt="Mail" className="w-10 h-10" />
+                <img src={XIcon} alt="X" className="w-10 h-10 rounded-full" />
               </a>
+           
             </div>
           </div>
         </motion.div>
