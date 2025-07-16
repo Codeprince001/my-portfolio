@@ -1,14 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Logo from "../assets/brand-logo.png";
 
 const Header: React.FC = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const toggleMenu = (): void => setIsOpen(!isOpen);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [hideHeader, setHideHeader] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentY = window.scrollY;
+      setIsScrolled(currentY > 50);
+
+      if (window.innerWidth >= 768) {
+        // Hide header if past hero section (e.g., 600px) and scrolling down
+        if (currentY > 600 && currentY > lastScrollY) {
+          setHideHeader(true);
+        } else {
+          setHideHeader(false);
+        }
+      }
+
+      lastScrollY = currentY;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="w-full fixed top-0 left-0 z-50 p-4">
-      <div className="max-w-7xl mx-auto px-4 py-4 bg-brand m-4 rounded-3xl flex items-center justify-between">
+    <header
+      className={`
+        w-full fixed top-0 left-0 z-50 transition-all duration-300
+        ${hideHeader ? 'translate-y-[-100%]' : 'translate-y-0'}
+      `}
+    >
+      <div className={`max-w-7xl mx-auto px-4 py-4 bg-brand m-4 rounded-3xl flex items-center justify-between transition-all duration-300 ${isScrolled ? 'bg-brand/60 backdrop-blur-md shadow-md' : ''}`}>
         {/* Logo */}
         <div className="flex-shrink-0">
           <img src={Logo} alt="Logo" width={54} className="block" />
