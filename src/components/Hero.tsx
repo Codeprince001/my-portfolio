@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative w-full min-h-screen md:pt-48 pt-40 bg-[#0A0A23] text-white overflow-hidden"
+      className="relative w-full md:pt-48 pt-40 bg-[#0A0A23] text-white overflow-hidden"
     >
       <div className='hidden lg:block'>
         <GridBackground/>

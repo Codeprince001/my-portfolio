@@ -7,7 +7,7 @@ const About: React.FC = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section id="about" className="relative py-16 sm:py-20 bg-[#0A0A23] text-white overflow-hidden">
+    <section id="about" className="relative py-4 lg:py-16 bg-[#0A0A23] text-white overflow-hidden">
       <div ref={ref} className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start gap-12 md:gap-24">
 
         {/* Image Section */}
@@ -24,7 +24,7 @@ const About: React.FC = () => {
               absolute w-72 h-72 sm:w-80 sm:h-80
               bg-yellow-400 rounded-full
               blur-[30px]
-              top-12 -right-5 z-0
+              top-20 -right-5 z-0
               opacity-20
               shadow-[0_0_60px_15px_rgba(239,156,1,0.5)]
               
@@ -36,7 +36,7 @@ const About: React.FC = () => {
               absolute w-64 h-64 sm:w-72 sm:h-72
               bg-yellow-300 rounded-full
               blur-[30px]
-              -top-10 -left-10 z-0
+              top-10 -left-10 z-0
               opacity-10
               shadow-[0_0_40px_10px_rgba(239,156,1,0.4)]
             "
@@ -48,7 +48,7 @@ const About: React.FC = () => {
               border-2 sm:border-4 border-yellow-500
               w-60 h-60 sm:w-72 sm:h-72
               overflow-hidden shadow-lg
-            "
+              mt-20"
           >
             <img
               src={Me}
