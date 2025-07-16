@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import Me from "../assets/me.jpg";
+import Me from "../assets/me.png";
 
 const About: React.FC = () => {
   const ref = useRef(null);

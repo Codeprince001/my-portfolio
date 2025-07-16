@@ -34,12 +34,12 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`
+      className={` p-4
         w-full fixed top-0 left-0 z-50 transition-all duration-300
         ${hideHeader ? 'translate-y-[-100%]' : 'translate-y-0'}
       `}
     >
-      <div className={`max-w-7xl mx-auto px-4 py-4 bg-brand m-4 rounded-3xl flex items-center justify-between transition-all duration-300 ${isScrolled ? 'bg-brand/60 backdrop-blur-md shadow-md' : ''}`}>
+      <div className={`max-w-7xl mx-auto px-4 py-4 bg-brand m-4 rounded-3xl flex items-center justify-between transition-all duration-300 ${isScrolled ? 'bg-brand/50 backdrop-blur-md shadow-md' : ''}`}>
         {/* Logo */}
         <div className="flex-shrink-0">
           <img src={Logo} alt="Logo" width={54} className="block" />
