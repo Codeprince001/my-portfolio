@@ -7,6 +7,7 @@ import LinkedinIcon from "../assets/linkedin.svg";
 import XIcon from "../assets/x.svg";
 import GithubIcon from "../assets/github.svg";
 import GridBackground from "../components/GridBackground"
+import Resume from "../assets/Urangyork_Wisdom_Fullstack.pdf"
 
 const Hero: React.FC = () => {
   const ref = useRef(null);
@@ -44,7 +45,7 @@ const Hero: React.FC = () => {
           {/* Resume and Socials */}
           <div className="mb-6 flex flex-col items-start gap-4">
             <a
-              href="#"
+              href={Resume}
               className="bg-brand text-black px-8 py-4 rounded hover:bg-yellow-400 transition text-sm font-semibold flex items-center"
             >
               Resume <span className="inline-block ml-2"><Download size={16} /></span>

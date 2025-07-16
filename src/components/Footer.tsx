@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
 
       {/* Copyright */}
       <div className="text-center mt-6 text-xs text-gray-500">
-        &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+        &copy; {new Date().getFullYear()} Wisdom Tech. All rights reserved.
       </div>
     </footer>
   );
