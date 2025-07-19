@@ -1,8 +1,8 @@
 // constants/webProjects.ts
 import Art from "../assets/art-gallery.png"
 import MealPlanner from "../assets/ai-meal-planner-1.png"
-import Kaleido from "../assets/kaleidofinance.png"
-import Belle from "../assets/belle.png"
+// import Kaleido from "../assets/kaleidofinance.png"
+// import Belle from "../assets/belle.png"
 
 export const webProjects = [
   {
