@@ -1,5 +1,8 @@
 // constants/webProjects.ts
 import Art from "../assets/art-gallery.png"
+import MealPlanner from "../assets/ai-meal-planner-1.png"
+import Kaleido from "../assets/kaleidofinance.png"
+import Belle from "../assets/belle.png"
 
 export const webProjects = [
   {
@@ -14,11 +17,11 @@ export const webProjects = [
   {
     id: 2,
     title: "AI Portfolio Generator",
-    description: "An AI tool that helps developers auto-generate portfolios.",
-    image: "/images/ai-portfolio.png",
-    techStack: ["Next.js", "Framer Motion", "OpenAI"],
-    repo: "https://github.com/username/ai-portfolio",
-    demo: "https://aiportfolio.example.com",
+    description: "An AI meal planner that generates meal plan according to diet.",
+    image: MealPlanner,
+    techStack: ["Next.js",, "Stripe", "Prisma", "OpenAI"],
+    repo: "https://github.com/Codeprince001/ai-saas-mealplanner",
+    demo: "https://ai-saas-mealplanner-livid.vercel.app/",
   },
   {
     id: 3,
