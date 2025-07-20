@@ -28,8 +28,8 @@ const Projects: React.FC = () => {
     <div className="bg-[#0A0A23] min-h-screen py-10 px-4 sm:px-8 text-white">
       <div className="max-w-7xl mx-auto rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-md p-6 sm:p-10">
       <button
-        onClick={() => navigate('')}
-        className="mb-6 inline-block rounded border border-brand px-4 py-2 text-brand hover:bg-brand hover:text-gray-900 transition"
+        onClick={() => navigate('/')}
+        className="cursor-pointer mb-6 inline-block rounded border border-brand px-4 py-2 text-brand hover:bg-brand hover:text-gray-900 transition"
       >
         ← Back
       </button>

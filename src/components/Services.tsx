@@ -12,11 +12,11 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeOut} },
+  visible: { opacity: 1, y: 0, transition: { duration: 1, ease: easeOut} },
 };
 
 const Services: React.FC = () => (
-  <section id="services" className="py-20 bg-[#0A0A23] text-white">
+  <section id="services" className="py-20 bg-[#0A0A23] text-white lg:px-10">
     <div className="max-w-[90rem] mx-auto px-4 text-center">
       <h2 className="text-2xl md:text-3xl font-bold text-brand mb-4">Services</h2>
       <p className="text-gray-400 mb-12 text-base sm:text-lg max-w-2xl mx-auto">

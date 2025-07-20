@@ -13,7 +13,7 @@ interface Project {
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   return (
-    <div className="bg-secondary rounded-2xl shadow-xl overflow-hidden text-white p-5 max-w-[340px] mx-auto flex flex-col h-full transition hover:scale-[1.015] hover:shadow-2xl duration-300">
+    <div className="cursor-pointer bg-secondary rounded-2xl shadow-xl overflow-hidden text-white p-5 max-w-[340px] mx-auto flex flex-col h-full transition hover:scale-[1.015] hover:shadow-2xl duration-300">
       <img
         src={project.image}
         alt={project.title}

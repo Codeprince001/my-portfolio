@@ -12,6 +12,7 @@ import NetJs from "../assets/nextjs.svg"
 import Docker from "../assets/docker_icon.svg"
 import Kubernetes from "../assets/kubernetes_icon.svg"
 import Linux from "../assets/linux.svg"
+import NodeJs from "../assets/nodejs_icon.svg"
 
 export interface Skill {
   icon: any;
@@ -23,6 +24,7 @@ export const skills: Skill[] = [
   { icon: NetJs, name: 'Next.js' },
   { icon: Javascript, name: 'JavaScript' },
   { icon: Typescript, name: 'TypeScript' },
+  { icon: NodeJs, name: 'NodeJS' },
   { icon: Html, name: 'HTML5' },
   { icon: Figma, name: 'Figma' },
   { icon: Python, name: 'Python' },

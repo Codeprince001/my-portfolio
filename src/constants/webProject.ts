@@ -8,6 +8,15 @@ import Belle from "../assets/belle.png"
 export const webProjects = [
   {
     id: 1,
+    title: "Web3 - Funding Platform",
+    description: "DeFi Gateway to Abstract P2P lending & borrowing powered by Ai Agent",
+    image: Kaleido,
+    techStack: ["NextJs", "Dapps"],
+    repo: "https://github.com/Codeprince001",
+    demo: "https://kaleidofinance.xyz/",
+  },
+  {
+    id: 2,
     title: "Web3 Art App",
     description: "A dynamic web gallery showcasing modern art collections.",
     image: Art,
@@ -16,7 +25,7 @@ export const webProjects = [
     demo: "https://art-website-mu.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "AI Meal Planner",
     description: "An AI meal planner that generates meal plan according to diet.",
     image: MealPlanner,
@@ -25,22 +34,13 @@ export const webProjects = [
     demo: "https://ai-saas-mealplanner-livid.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Blogging CMS",
     description: "A Fullstack Blog Project",
     image: BlogCMS,
     techStack: ["NodeJS", "MongoDb", "AWS S3"],
     repo: "https://github.com/Codeprince001/MERN-BlogApp",
     demo: "https://techhome-blog-fdfd45864279.herokuapp.com/",
-  },
-  {
-    id: 4,
-    title: "Web3 - Funding Platform",
-    description: "DeFi Gateway to Abstract P2P lending & borrowing powered by Ai Agent",
-    image: Kaleido,
-    techStack: ["NextJs", "Dapps"],
-    repo: "https://github.com/Codeprince001",
-    demo: "https://kaleidofinance.xyz/",
   },
   {
     id: 5,

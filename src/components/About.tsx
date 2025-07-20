@@ -14,7 +14,7 @@ const About: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.1 }}
+          transition={{ duration: 1.3, delay: 0.5 }}
           className="relative w-full sm:w-3/4 md:w-[40%] flex justify-center items-center mx-auto"
         >
          {/* Blurred Backgrounds with glow */}
@@ -27,7 +27,6 @@ const About: React.FC = () => {
               top-20 -right-5 z-0
               opacity-20
               shadow-[0_0_60px_15px_rgba(239,156,1,0.5)]
-              
             "
           ></div>
           <div
