@@ -46,7 +46,7 @@ export const webProjects = [
     id: 5,
     title: "Web3 Tokenomics LaunchPad",
     description: "Bele, the fearless symbol of Kaspa, decentralized finance with $BELE token",
-    image: "/images/ecommerce.png",
+    image: Belle,
     techStack: ["NextJs", "Kapsa", "DeFi"],
     repo: "https://github.com/Codeprince001",
     demo: "https://belethebull.xyz/",
