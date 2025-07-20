@@ -4,6 +4,7 @@ import MealPlanner from "../assets/ai-meal-planner-1.png"
 import BlogCMS from "../assets/node-js-blog.png"
 import Kaleido from "../assets/kaleidofinance.png"
 import Belle from "../assets/belle.png"
+import Manaement from "../assets/management.png"
 
 export const webProjects = [
   {
@@ -50,5 +51,14 @@ export const webProjects = [
     techStack: ["NextJs", "Kapsa", "DeFi"],
     repo: "https://github.com/Codeprince001",
     demo: "https://belethebull.xyz/",
+  },
+  {
+    id: 5,
+    title: "TaskWise — Smarter Task & Team Management",
+    description: "A task and team management dashboard, featuring visual analytics and real-time task tracking",
+    image: Manaement,
+    techStack: ["ReactJs", "Express", "NodeJs"],
+    repo: "https://github.com/Codeprince001/client-dashboard",
+    demo: "https://client-dashboard-pearl.vercel.app/",
   },
 ];
