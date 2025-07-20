@@ -17,7 +17,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-48 object-cover rounded-xl mb-4"
+        className="w-full h-48 object-cover  rounded-xl mb-4 cursor-pointer"
       />
 
       <h3 className="text-lg sm:text-xl font-semibold mb-1">{project.title}</h3>

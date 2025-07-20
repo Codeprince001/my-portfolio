@@ -3,7 +3,6 @@ import { webProjects } from '../constants/webProject';
 import { mobileProjects } from '../constants/mobileProject';
 import ProjectCard from '../components/ProjectCard';
 import { useNavigate } from 'react-router-dom';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const ITEMS_PER_PAGE = 6;

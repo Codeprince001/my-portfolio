@@ -1,8 +1,9 @@
 // constants/webProjects.ts
 import Art from "../assets/art-gallery.png"
 import MealPlanner from "../assets/ai-meal-planner-1.png"
-// import Kaleido from "../assets/kaleidofinance.png"
-// import Belle from "../assets/belle.png"
+import BlogCMS from "../assets/node-js-blog.png"
+import Kaleido from "../assets/kaleidofinance.png"
+import Belle from "../assets/belle.png"
 
 export const webProjects = [
   {
@@ -16,38 +17,38 @@ export const webProjects = [
   },
   {
     id: 2,
-    title: "AI Portfolio Generator",
+    title: "AI Meal Planner",
     description: "An AI meal planner that generates meal plan according to diet.",
     image: MealPlanner,
-    techStack: ["Next.js",, "Stripe", "Prisma", "OpenAI"],
+    techStack: ["Next.js", "Stripe", "Prisma", "OpenAI"],
     repo: "https://github.com/Codeprince001/ai-saas-mealplanner",
     demo: "https://ai-saas-mealplanner-livid.vercel.app/",
   },
   {
     id: 3,
-    title: "DevOps Dashboard",
-    description: "Interactive dashboard to visualize CI/CD pipelines.",
-    image: "/images/devops-dashboard.png",
-    techStack: ["Vue", "Docker", "Firebase"],
-    repo: "https://github.com/username/devops-dashboard",
-    demo: "https://devopsdashboard.example.com",
+    title: "Blogging CMS",
+    description: "A Fullstack Blog Project",
+    image: BlogCMS,
+    techStack: ["NodeJS", "MongoDb", "AWS S3"],
+    repo: "https://github.com/Codeprince001/MERN-BlogApp",
+    demo: "https://techhome-blog-fdfd45864279.herokuapp.com/",
   },
   {
     id: 4,
-    title: "E-Commerce Platform",
-    description: "Fullstack e-commerce store with cart and admin features.",
-    image: "/images/ecommerce.png",
-    techStack: ["React", "MongoDB", "Express"],
-    repo: "https://github.com/username/ecommerce-platform",
-    demo: "https://store.example.com",
+    title: "Web3 - Funding Platform",
+    description: "DeFi Gateway to Abstract P2P lending & borrowing powered by Ai Agent",
+    image: Kaleido,
+    techStack: ["NextJs", "Dapps"],
+    repo: "https://github.com/Codeprince001",
+    demo: "https://kaleidofinance.xyz/",
   },
   {
     id: 5,
-    title: "Blogging CMS",
-    description: "Headless CMS platform for managing and publishing blogs.",
-    image: "/images/blog-cms.png",
-    techStack: ["Next.js", "Sanity", "Typescript"],
-    repo: "https://github.com/username/blog-cms",
-    demo: "https://cms.example.com",
+    title: "Web3 Tokenomics LaunchPad",
+    description: "Bele, the fearless symbol of Kaspa, decentralized finance with $BELE token",
+    image: "/images/ecommerce.png",
+    techStack: ["NextJs", "Kapsa", "DeFi"],
+    repo: "https://github.com/Codeprince001",
+    demo: "https://belethebull.xyz/",
   },
 ];
