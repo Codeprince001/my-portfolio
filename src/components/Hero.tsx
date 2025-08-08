@@ -7,7 +7,7 @@ import LinkedinIcon from "../assets/linkedin.svg";
 import XIcon from "../assets/x.svg";
 import GithubIcon from "../assets/github.svg";
 import GridBackground from "../components/GridBackground"
-import Resume from "../assets/Urangyork_Wisdom_Fullstack.pdf"
+import Resume from "../assets/Wisdom-Matthew-Urangyork-Software-Engineering.pdf"
 
 const Hero: React.FC = () => {
   const ref = useRef(null);
