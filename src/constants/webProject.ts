@@ -35,15 +35,6 @@ export const webProjects = [
     demo: "https://ai-resume-builder-neon.vercel.app/",
   },
   {
-    id: 4,
-    title: "Blogging CMS",
-    description: "A Fullstack Blog Project",
-    image: BlogCMS,
-    techStack: ["NodeJS", "MongoDb", "AWS S3"],
-    repo: "https://github.com/Codeprince001/MERN-BlogApp",
-    demo: "https://techhome-blog-fdfd45864279.herokuapp.com/",
-  },
-  {
     id: 5,
     title: "Web3 Tokenomics LaunchPad",
     description: "Bele, the fearless symbol of Kaspa, decentralized finance with $BELE token",
@@ -60,5 +51,14 @@ export const webProjects = [
     techStack: ["ReactJs", "Express", "NodeJs"],
     repo: "https://github.com/Codeprince001/client-dashboard",
     demo: "https://client-dashboard-pearl.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Blogging CMS",
+    description: "A Fullstack Blog Project",
+    image: BlogCMS,
+    techStack: ["NodeJS", "MongoDb", "AWS S3"],
+    repo: "https://github.com/Codeprince001/MERN-BlogApp",
+    demo: "https://techhome-blog-fdfd45864279.herokuapp.com/",
   },
 ];
