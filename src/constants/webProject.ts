@@ -1,6 +1,6 @@
 // constants/webProjects.ts
 import Art from "../assets/art-gallery.png"
-import MealPlanner from "../assets/ai-meal-planner-1.png"
+import MealPlanner from "../assets/ai-resume-analyser.png"
 import BlogCMS from "../assets/node-js-blog.png"
 import Kaleido from "../assets/kaleidofinance.png"
 import Belle from "../assets/belle.png"
@@ -27,12 +27,12 @@ export const webProjects = [
   },
   {
     id: 3,
-    title: "AI Meal Planner",
-    description: "An AI meal planner that generates meal plan according to diet.",
+    title: "AI Resume Analyser",
+    description: "An AI-powered tool that analyzes resumes, provides insights, and suggests improvements to optimize job applications.",
     image: MealPlanner,
-    techStack: ["Next.js", "Stripe", "Prisma", "OpenAI"],
-    repo: "https://github.com/Codeprince001/ai-saas-mealplanner",
-    demo: "https://ai-saas-mealplanner-livid.vercel.app/",
+    techStack: ["Next.js", "AuthJs", "Prisma", "OpenAI"],
+    repo: "https://github.com/Codeprince001/ai-resume-builder",
+    demo: "https://ai-resume-builder-neon.vercel.app/",
   },
   {
     id: 4,
