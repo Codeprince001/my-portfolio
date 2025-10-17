@@ -32,7 +32,7 @@ export const webProjects = [
     image: MealPlanner,
     techStack: ["Next.js", "AuthJs", "Prisma", "OpenAI"],
     repo: "https://github.com/Codeprince001/ai-resume-builder",
-    demo: "https://ai-resume-builder-neon.vercel.app/
+    demo: "https://ai-resume-builder-neon.vercel.app/"
   },
   {
     id: 5,
