@@ -69,7 +69,7 @@ const About: React.FC = () => {
           </h2>
           <p className="text-gray-300 leading-relaxed text-sm sm:text-base text-center md:text-left">
             I’m a passionate Full Stack Software Engineer with a strong foundation in both frontend and backend development.
-            My technical toolkit includes React.js, Next.js, TypeScript, Express, MongoDB, Flask, and the core trio of HTML, CSS, and JavaScript.
+            My technical toolkit includes React.js, Next.js, TypeScript, NodeJs, Express, MongoDB, Flask.
             <br /><br />
             I specialize in building scalable, user-centric applications and integrating intelligent AI agents into real-world solutions. With certifications in UI/UX Design from Google and Frontend Development from Meta, I blend design thinking with engineering precision to deliver seamless digital experiences.
             <br /><br />
