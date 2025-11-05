@@ -5,6 +5,7 @@ import BlogCMS from "../assets/node-js-blog.png"
 import Kaleido from "../assets/kaleidofinance.png"
 import Belle from "../assets/belle.png"
 import Manaement from "../assets/management.png"
+import Uni from "../assets/landing-page.png"
 
 export const webProjects = [
   {
@@ -35,7 +36,7 @@ export const webProjects = [
     demo: "https://ai-resume-builder-neon.vercel.app/"
   },
   {
-    id: 5,
+    id: 4,
     title: "Web3 Tokenomics LaunchPad",
     description: "Bele, the fearless symbol of Kaspa, decentralized finance with $BELE token",
     image: Belle,
@@ -53,12 +54,21 @@ export const webProjects = [
     demo: "https://client-dashboard-pearl.vercel.app/",
   },
   {
-    id: 4,
+    id: 6,
     title: "Blogging CMS",
     description: "A Fullstack Blog Project",
     image: BlogCMS,
     techStack: ["NodeJS", "MongoDb", "AWS S3"],
     repo: "https://github.com/Codeprince001/MERN-BlogApp",
     demo: "https://techhome-blog-fdfd45864279.herokuapp.com/",
+  },
+  {
+    id: 7,
+    title: "University Website",
+    description: "Landing page of a univerisity website",
+    image: Uni,
+    techStack: ["NextJs", "Typescript"],
+    repo: "https://github.com/Codeprince001",
+    demo: "https://university-website-black.vercel.app/",
   },
 ];
