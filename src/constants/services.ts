@@ -1,5 +1,5 @@
 // File: constants/services.ts
-import { Code, Server, Settings, PenTool } from 'lucide-react';
+import { Code, Server, Settings, Brain } from 'lucide-react';
 
 interface Service {
   icon: any;
@@ -27,9 +27,9 @@ export const services: Service[] = [
       'Automating deployment pipelines, CI/CD, and managing scalable cloud infrastructure platforms like AWS, Vercel, and Docker for maximum performance and uptime.',
   },
   {
-    icon: PenTool,
-    title: 'UI/UX Design',
+    icon: Brain,
+    title: 'AI/LLM',
     description:
-      'Designing intuitive, engaging interfaces and user journeys in Figma—translating complex ideas into elegant, user-friendly digital experiences.',
+      'Developing intelligent solutions with AI and Large Language Models, integrating cutting-edge machine learning capabilities to create smart, adaptive applications.',
   },
 ];
