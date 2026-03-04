@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
           />
           <button
             type="submit"
-            className="w-full bg-brand text-black font-semibold py-3 rounded-md hover:bg-opacity-90 transition cursor-pointer"
+            className="w-full bg-brand text-black font-semibold py-3 rounded-md hover:brightness-75 transition cursor-pointer"
           >
             {loading ? "Sending..." : "Send"}
           </button>

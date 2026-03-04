@@ -18,13 +18,13 @@ export const services: Service[] = [
     icon: Server,
     title: 'Backend Engineering',
     description:
-      'Building robust and scalable server-side applications with Node.js, MongoDB, and REST APIs to power secure and efficient data-driven systems.',
+      'Building robust and scalable server-side applications with Node.js, Python, MongoDB, Postgres and REST APIs to power secure and efficient data-driven systems.',
   },
   {
     icon: Settings,
-    title: 'Dev-Ops',
+    title: 'Cloud & Dev-Ops',
     description:
-      'Automating deployment pipelines, CI/CD, and managing scalable cloud infrastructure platforms like AWS, Vercel, and Docker for maximum performance and uptime.',
+      'Automating deployment pipelines, CI/CD, and managing scalable cloud infrastructure platforms like AWS, VPS and Docker and Kubernetes for maximum performance and uptime.',
   },
   {
     icon: Brain,

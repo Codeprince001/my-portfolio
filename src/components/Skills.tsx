@@ -35,7 +35,7 @@ const Skills: React.FC = () => {
               </motion.div>
               <div
                 className="
-                  opacity-100 scale-100 sm:opacity-0 sm:scale-90 group-hover:opacity-100 group-hover:scale-100
+                  opacity-100 scale-100 group-hover:scale-105
                   transition duration-300 ease-in-out
                   text-xs px-4 py-1 rounded-full bg-gray-700 group-hover:bg-[#EF9C01] text-white
                 "
