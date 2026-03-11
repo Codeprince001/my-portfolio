@@ -17,7 +17,7 @@ export const webProjects = [
     image: tekmedoc,
     techStack: ["NextJs", "NestJs", "Socket.io", "Postgres"],
     repo: " ",
-    demo: "https://tekhealth.vercel.app/"
+    demo: "https://www.tekmedoc.com/"
   },
   {
     id: 4,
