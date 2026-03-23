@@ -1,0 +1,13 @@
+# Robots.txt for SEO
+# Allow all crawlers to index the site
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://www.bookevents.live/sitemap.xml
+
+# Crawl delay (optional - 1 second delay between requests)
+Crawl-delay: 1
