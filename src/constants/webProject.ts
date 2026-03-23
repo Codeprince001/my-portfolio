@@ -1,13 +1,12 @@
 // constants/webProjects.ts
 import Art from "../assets/art-gallery.png"
 import MealPlanner from "../assets/ai-resume-analyser.png"
-// import BlogCMS from "../assets/node-js-blog.png"
 import Kaleido from "../assets/kaleidofinance.png"
-// import Belle from "../assets/belle.png"
 import Manaement from "../assets/management.png"
 import Uni from "../assets/landing-page.png"
 import pochehr from "../assets/pochehr.png"
 import tekmedoc from "../assets/tekmedoc.png"
+import eventx from "../assets/eventx-hero.png"
 
 export const webProjects = [
   {
@@ -29,6 +28,25 @@ export const webProjects = [
     demo: "https://www.pochehr.com/",
   },
   {
+  id: 5,
+  title: "EventX - Event Management Platform",
+  description:
+    "A full-featured event management platform for creating, organizing, and tracking events with a seamless attendee experience.",
+  image: eventx,
+  techStack: ["NextJS", "NestJs", "Postgres"],
+  repo: "",
+  demo: "https://www.bookevents.live/",
+},
+{
+  id: 3,
+  title: "AI Resume Analyser",
+  description: "An AI-powered tool that analyzes resumes, provides insights, and suggests improvements to optimize job applications.",
+  image: MealPlanner,
+  techStack: ["Next.js", "AuthJs", "Prisma", "OpenAI"],
+  repo: "https://github.com/Codeprince001/ai-resume-builder",
+  demo: "https://ai-resume-builder-neon.vercel.app/ai-assistant",
+},
+{
     id: 10,
     title: "Web3 - Funding Platform",
     description: "DeFi Gateway to Abstract P2P lending & borrowing powered by Ai Agent",
@@ -36,15 +54,6 @@ export const webProjects = [
     techStack: ["NextJs", "Dapps"],
     repo: "https://github.com/Codeprince001",
     demo: "https://kaleidofinance.xyz/",
-  },
-  {
-    id: 3,
-    title: "AI Resume Analyser",
-    description: "An AI-powered tool that analyzes resumes, provides insights, and suggests improvements to optimize job applications.",
-    image: MealPlanner,
-    techStack: ["Next.js", "AuthJs", "Prisma", "OpenAI"],
-    repo: "https://github.com/Codeprince001/ai-resume-builder",
-    demo: "https://ai-resume-builder-neon.vercel.app/ai-assistant",
   },
   {
     id: 2,
