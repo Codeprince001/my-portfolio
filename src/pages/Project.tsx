@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { webProjects } from '../constants/webProject';
 import { mobileProjects } from '../constants/mobileProject';
 import ProjectCard from '../components/ProjectCard';
 import { useNavigate } from 'react-router-dom';
-
+import { renderStructuredData, getBreadcrumbSchema } from '../utils/seo';
 
 const ITEMS_PER_PAGE = 6;
 
@@ -12,6 +13,11 @@ const Projects: React.FC = () => {
   const [webPage, setWebPage] = useState(1);
   const [mobilePage, setMobilePage] = useState(1);
   const navigate = useNavigate();
+
+  const breadcrumbs = [
+    { name: 'Home', url: 'https://yourportfoliosite.com/' },
+    { name: 'Projects', url: 'https://yourportfoliosite.com/projects' },
+  ];
 
   const paginatedWeb = webProjects.slice((webPage - 1) * ITEMS_PER_PAGE, webPage * ITEMS_PER_PAGE);
   const paginatedMobile = mobileProjects.slice((mobilePage - 1) * ITEMS_PER_PAGE, mobilePage * ITEMS_PER_PAGE);
@@ -26,15 +32,28 @@ const Projects: React.FC = () => {
 
   return (
     <div className="bg-[#0A0A23] min-h-screen py-10 px-4 sm:px-8 text-white">
+      <Helmet>
+        <title>My Projects - Software Engineering Portfolio | Wisdom</title>
+        <meta name="description" content="Explore my portfolio of full-stack web and mobile development projects. See real-world applications built with React, Next.js, Node.js, and more." />
+        <meta name="keywords" content="projects, portfolio, web development, mobile development, React, Next.js, Node.js" />
+        <link rel="canonical" href="https://yourportfoliosite.com/projects" />
+        <meta property="og:title" content="My Projects - Software Engineering Portfolio" />
+        <meta property="og:description" content="Explore full-stack web and mobile development projects" />
+        <meta property="og:url" content="https://yourportfoliosite.com/projects" />
+        <script type="application/ld+json">
+          {renderStructuredData(getBreadcrumbSchema(breadcrumbs)).__html}
+        </script>
+      </Helmet>
+      
       <div className="max-w-7xl mx-auto rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-md p-6 sm:p-10">
-      <button
-        onClick={() => navigate('/')}
-        className="cursor-pointer mb-6 inline-block rounded border border-brand px-4 py-2 text-brand hover:bg-brand hover:text-gray-900 transition"
-      >
-        ← Back
-      </button>
+        <button
+          onClick={() => navigate('/')}
+          className="cursor-pointer mb-6 inline-block rounded border border-brand px-4 py-2 text-brand hover:bg-brand hover:text-gray-900 transition"
+        >
+          ← Back
+        </button>
 
-      <h2 className="text-center text-3xl font-bold text-brand mb-8">My Projects</h2>
+        <h1 className="text-center text-3xl font-bold text-brand mb-8">My Projects</h1>
 
       {/* Tabs */}
       <ul className="flex justify-center border-b border-gray-700 mb-8">
