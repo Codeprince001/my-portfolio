@@ -6,7 +6,7 @@ import Manaement from "../assets/management.png"
 import Uni from "../assets/landing-page.png"
 import pochehr from "../assets/pochehr.png"
 import tekmedoc from "../assets/tekmedoc.png"
-import eventx from "../assets/eventx-hero.png"
+import eventx from "../assets/event-x-hero.png";
 
 export const webProjects = [
   {
