@@ -1,7 +1,7 @@
 // constants/webProjects.ts
 import Art from "../assets/art-gallery.png"
 import MealPlanner from "../assets/ai-resume-analyser.png"
-import Kaleido from "../assets/kaleidofinance.png"
+import Kaleido from "../assets/kaleido.png"
 import Manaement from "../assets/management.png"
 import Uni from "../assets/landing-page.png"
 import pochehr from "../assets/pochehr.png"
@@ -53,7 +53,7 @@ export const webProjects = [
     image: Kaleido,
     techStack: ["NextJs", "Dapps"],
     repo: "https://github.com/Codeprince001",
-    demo: "https://kaleidofinance.xyz/",
+    demo: "https://kaleidofi.xyz/",
   },
   {
     id: 2,
