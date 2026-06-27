@@ -35,7 +35,7 @@ export const webProjects = [
   image: eventx,
   techStack: ["NextJS", "NestJs", "Postgres"],
   repo: "",
-  demo: "https://www.bookevents.live/",
+  demo: "https://www.eventshub9ja.com/",
 },
 {
   id: 3,
